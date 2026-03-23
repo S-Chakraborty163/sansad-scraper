@@ -38,7 +38,6 @@ Since the 1950s, both houses of Indian Parliament have been discussing and debat
 ```
 sansad-scraper/
 |-- sansad_scraper.py     # Main scraper (LS + RS + PDF download + Excel export)
-|-- pdf_downloader.py     # Standalone PDF downloader from existing Excel
 |-- requirements.txt      # Python dependencies
 |-- .gitignore
 |-- README.md
@@ -50,11 +49,11 @@ sansad-scraper/
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/sansad-scraper.git
+git clone https://github.com/S-Chakraborty163/sansad-scraper.git
 cd sansad-scraper
 ```
 
-### 2. Create a virtual environment (recommended)
+### 2. Create a virtual environment 
 ```bash
 # Windows
 python -m venv venv
@@ -87,11 +86,6 @@ python sansad_scraper.py --keyword damodar --source ls
 ### Rajya Sabha only
 ```bash
 python sansad_scraper.py --keyword damodar --source rs
-```
-
-### Skip PDF downloads (metadata only, much faster)
-```bash
-python sansad_scraper.py --keyword damodar --no-pdf
 ```
 
 ### All Lok Sabhas 13-18 (full historical data)
@@ -179,7 +173,3 @@ Found by inspecting Chrome DevTools Network tab:
 
 ---
 
-## Requirements
-
-- Python 3.10+
-- Internet connection
